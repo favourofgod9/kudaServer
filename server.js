@@ -110,6 +110,8 @@ app.post("/otp", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port http://localhost:${PORT}`);
+// });
+// Export app for Vercel
+module.exports = app;
